@@ -37,12 +37,13 @@ The number of nodes in the list is sz.
 
 ### Intuition
 
-We notice that the problem could be simply reduced to another one : Remove the (L−n+1)(L - n + 1)(L−n+1)th node from the beginning in the list, where L is the list length. This problem is easy to solve once we found list length L.
+We notice that the problem could be simply reduced to another one : Remove the (L - n + 1)th node from the beginning in the list, where L is the list length. This problem is easy to solve once we found list length L.
 
 ### Algorithm
 
 First we will add an auxiliary "dummy" node, which points to the list head. The "dummy" node is used to simplify some corner cases such as a list with only one node, or removing the head of the list. On the first pass, we find the list length L. Then we set a pointer to the dummy node and start to move it through the list till it comes to the (L − n) th node. We relink next pointer of the (L − n)th node to the (L - n + 2)th node and we are done.
-![image](https://github.com/lana-20/leetcode-19/assets/70295997/8de19f29-f890-4f82-b815-cd57a1e2f654)
+![image](https://github.com/lana-20/leetcode-19/assets/70295997/11bfaa41-a4f2-4cbd-8598-48572084c04b)
+
 
 Java Solution Code:
 
