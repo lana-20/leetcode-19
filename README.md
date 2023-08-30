@@ -86,7 +86,8 @@ Complexity Analysis:
 The above algorithm could be optimized to one pass. Instead of one pointer, we could use two pointers. The first pointer advances the list by n+1 steps from the beginning, while the second pointer starts from the beginning of the list. Now, both pointers are exactly separated by n  nodes apart. We maintain this constant gap by advancing both pointers together until the first pointer arrives past the last node. The second pointer will be pointing at the nnnth node counting from the last.
 We relink the next pointer of the node referenced by the second pointer to point to the node's next next node.
 
-[image/drawing TBD]
+![image](https://github.com/lana-20/leetcode-19/assets/70295997/b39b0951-09f7-4e05-b53c-fa4ede2ace4f)
+
 
 Java Solution Code:
 
